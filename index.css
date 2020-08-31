@@ -5,12 +5,73 @@
 
 #TopDiv{
 	background-color:lime;
-	height:5.3vw;
+	height:5vw;
 	width:100%;
-	font-size:5vw;
-	margin-bottom:1vw;
+	padding:0px;
 
 }
+#TopLogo{
+	width:4vw;
+	height:4vw;
+	float:left;
+	background-color:fuchsia;
+	margin:.5vw;
+}
+#TopTitle{
+	width:auto;
+	float:left;
+	font-size:4.5vw;
+	height:4vw;
+	margin:.5vw;
+	margin-top:0vw;
+	text-align:justify;
+}
+#SocialSites{
+	float:right;
+	height:4vw;
+	width:12vw;
+	background-color:navy;
+	margin:.5vw;
+	margin-right:2vw;
+}
+#Instagram, #Twitter, #Youtube{
+	width:3.5vw;
+	height:3.5vw;
+	margin:.25vw;
+	background-color:yellow;
+	float:left;
+}
+
+#Navigation{
+	background-color:green;
+	height:4vw;
+	
+}
+
+#SecondDiv{
+	background-color:maroon;
+	height:40vw;
+	
+}
+#ThirdDiv{
+	background-color:aqua;
+	height:40vw;
+	
+}
+
+#FourthDiv{
+	background-color:orange;
+	height:40vw;
+	
+}
+
+#Footer{
+	background-color:blue;
+	height:5vw;
+	
+}
+
+
 
 .center {
   display: block;
