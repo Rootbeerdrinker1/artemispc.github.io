@@ -1,0 +1,19 @@
+﻿body {
+  background-color: powderblue;
+  margin:0px;
+}
+
+#TopDiv{
+	background-color:lime;
+	height:5.3vw;
+	width:100%;
+	font-size:5vw;
+	margin-bottom:1vw;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
