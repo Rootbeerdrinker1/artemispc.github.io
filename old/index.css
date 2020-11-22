@@ -1,0 +1,184 @@
+﻿body {
+  background-color: powderblue;
+  margin:0px;
+}
+
+#TopDiv{
+	background-color:gray;
+	height:6.5vw;
+	width:100%;
+	padding:0px;
+
+}
+#TopLogo{
+	width:5vw;
+	height:6vw;
+	float:left;
+	margin:.4vw;
+	margin-left: 2vw;
+	margin-right: 1vw;
+	
+}
+#Title{
+	width:auto;
+	float:left;
+	height:6vw;
+	margin-top:.4vw;
+
+		
+}
+
+#SocialSites{
+	float:right;
+	height:3.7vw;
+	width:11.1vw;
+	background-color:white;
+	margin:1.2vw;
+	margin-right:1.5vw;
+}
+#Instagram, #Twitter, #Youtube{
+	width:3.5vw;
+	height:3.5vw;
+	margin:.1vw;
+	background-color:yellow;
+	float:left;
+}
+#TopDiv2{
+	height:1vw;
+	width:100%;
+	padding:0px;
+	background-image:url(images/gradient2.png);
+	background-size:1vw;
+
+}
+#Navigation{
+	background-color:red;
+	height:3vw;
+	
+}
+
+#N_Home, #N_PC, #N_Team, #N_Contact{
+	font-size:1.8vw;
+	float:left;
+	width:auto;
+	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin-left:15vw;
+	margin-top:.2vw;
+	text-shadow: -.1vw .1vw 0 #FFFFFF,
+				  .1vw .1vw 0 #FFFFFF,
+				 .1vw -.1vw 0 #FFFFFF,
+				-.1vw -.1vw 0 #FFFFFF;
+	
+}
+
+#FirstDiv{
+	width:100%;
+	height: 39vw;
+}
+
+#SecondDiv{
+	background-color:black;
+	height:40vw;
+	
+}
+#rotatebox1{
+	width:100%;
+	height:40vw;
+}
+#rotatorleft{
+	height:100%;
+	width:20%;
+	float:left;
+}
+#rotatormiddle{
+	height:100%;
+	width:60%;
+	float:left;
+
+}
+#rotatorright{
+	height:100%;
+	width:20%;
+	float:left;
+
+}
+#rotatorleft img, #rotatorright img{
+	width: 7vw;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:16.5vw;
+  	
+}
+
+
+
+
+#ThirdDiv{
+	background-color:aqua;
+	height:40vw;
+	
+}
+
+#FourthDiv{
+	background-color:orange;
+	height:40vw;
+	
+}
+
+#Footer{
+	background-color:blue;
+	height:5vw;
+	
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divider{
+	height:1vw;
+	width:100%;
+	background-color:red;
+}
+.rotate180{
+	transform: rotate(180deg);
+}
+
+@mixin scrimGradient($startColor: $color-black, $direction: 'to bottom') {
+
+  $scrimCoordinates: (
+    0: 1,
+    19: 0.738,
+    34: 0.541,
+    47: 0.382,
+    56.5: 0.278,
+    65: 0.194,
+    73: 0.126,
+    80.2: 0.075,
+    86.1: 0.042,
+    91: 0.021,
+    95.2: 0.008,
+    98.2: 0.002,
+    100: 0
+  );
+
+  $hue: hue($startColor);
+  $saturation: saturation($startColor);
+  $lightness: lightness($startColor);
+  $stops: ();
+
+  @each $colorStop, $alphaValue in $scrimCoordinates {
+    $stop: hsla($hue, $saturation, $lightness, $alphaValue) percentage($colorStop/100);
+    $stops: append($stops, $stop, comma);
+  }
+
+  background: linear-gradient(unquote($direction), $stops);
+
+}
