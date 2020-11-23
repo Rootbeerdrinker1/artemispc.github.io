@@ -61,10 +61,10 @@ body {
 	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	margin-left:5vw;
 	margin-top:0vh;
-	text-shadow: -.1vh .1vh 0 rgba(255, 255, 255, 1),
-				  .1vh .1vh 0 rgba(255, 255, 255, 1),
-				 .1vh -.1vh 0 rgba(255, 255, 255, 1),
-				-.1vh -.1vh 0 rgba(255, 255, 255, 1);
+	text-shadow: -.2vh .2vh 0 rgba(255, 255, 255, 1),
+				  .2vh .2vh 0 rgba(255, 255, 255, 1),
+				 .2vh -.2vh 0 rgba(255, 255, 255, 1),
+				-.2vh -.2vh 0 rgba(255, 255, 255, 1);
 	
 }
 
