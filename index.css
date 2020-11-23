@@ -20,7 +20,7 @@
  	*/
  	position:fixed;
  	overflow: hidden;
- 	background-color:rgba(0, 0, 0, 0.7);
+ 	background-color:rgba(20, 20, 20, 0.7);
 }
 #TopLogo{
 	width:auto;
@@ -131,7 +131,7 @@ img {
 	height:14.9vh;
 	width:5vh;
 	background-color:white;
-	margin-top:80vh;
+	margin-top:75vh;
 	margin-left:87vw;
 	
 }
@@ -171,10 +171,16 @@ img {
   	object-fit:cover; 
 }
 #TopImage{
-	margin-top:14vh;
+	margin-top:13.95vh;
 	
 }
 
 }
 
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+	#TopHeader{ 
+		background-color:transparent;
+	
+	}
 
+}
