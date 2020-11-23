@@ -19,8 +19,8 @@
  	filter: blur(5px);
  	*/
  	position:fixed;
- 	overflow: hidden
-
+ 	overflow: hidden;
+ 	background-color:rgba(0, 0, 0, 0.7);
 }
 #TopLogo{
 	width:auto;
@@ -62,14 +62,9 @@
 				-.1vh -.1vh 0 #FFFFFF;
 	
 }
-#mobilespace{
-	display:none;
-}
-
 
 #Container{
 	scroll-snap-points-y: repeat(100vh);
-    scroll-snap-destination: 0 0;
     scroll-snap-type: y mandatory;
     scroll-snap-type: mandatory;
     height:100vh;
@@ -128,19 +123,7 @@ img {
 }
 
 
-@media only screen and (max-width: 600px) {
-#mobilespace{
-	height:100%;
-	width=100%;
-	display:block;
-	
-}
-#mobilespace img{
-	height:100%;
-	width=100%;
-	display:block;
-	
-}
+@media only screen and (max-aspect-ratio: 9/10) {
 
 #SocialSites{
 	position:fixed;
@@ -148,7 +131,7 @@ img {
 	height:14.9vh;
 	width:5vh;
 	background-color:white;
-	margin-top:84vh;
+	margin-top:80vh;
 	margin-left:87vw;
 	
 }
@@ -187,7 +170,10 @@ img {
   	height:100%;
   	object-fit:cover; 
 }
-
+#TopImage{
+	margin-top:14vh;
+	
+}
 
 }
 
