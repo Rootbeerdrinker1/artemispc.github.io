@@ -1,9 +1,13 @@
-﻿body {
+﻿html{
+    overflow-y: scroll;
+}
+body {
   	background-color:gray;
   	margin:0px;
-  	overflow-x:hidden;
+  	overflow-x: hidden;
   	overflow-y: hidden;
     height:100vh;
+    
 }
 
 #TopHeader{
@@ -19,9 +23,10 @@
  	filter: blur(5px);
  	*/
  	position:fixed;
- 	overflow: hidden;
  	background-color:rgba(20, 20, 20, 0.7);
+ 	
 }
+
 #TopLogo{
 	width:auto;
 	height:6vh;
@@ -123,7 +128,7 @@ img {
 }
 
 
-@media only screen and (max-aspect-ratio: 9/10) {
+@media only screen and (max-aspect-ratio: 15/10) {
 
 #SocialSites{
 	position:fixed;
@@ -142,40 +147,23 @@ img {
 	background-color:yellow;
 	float:left;
 }
-#TopHeader{
-	height:14vh;
-}
+
 #N_Home, #N_PC, #N_Team, #N_Contact{
 	font-size:2.4vh;
 	margin-left:3.9vw;
 	margin-top:0vh;
 		
 }
-#Container{
-	scroll-snap-points-y: repeat(84vh);
 
 }
-.section {
-    scroll-snap-align: end;
-    display: flex;
-    min-width:100vw;
-	height:86vh;
-	justify-content: center;
-	
-	
-}
-
-.section img{
-	width: 100%;
-  	height:100%;
-  	object-fit:cover; 
-}
-#TopImage{
-	margin-top:13.95vh;
-	
-}
+@media only screen and (max-aspect-ratio: 17/20) {
+	#TopHeader{
+		height:14vh;
+		
+	}
 
 }
+
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
 	#TopHeader{ 
