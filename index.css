@@ -49,20 +49,23 @@ body {
 #Navigation{
 	height:3.5vh;
 	margin-top: 2vh;
-	margin-right:6vh;
 	float:right;
 	
 }
 
 #N_Home, #N_PC, #N_Team, #N_Contact{
 	font-size:2.7vh;
-	font-weight: 900;
+	font-weight: 1vw;
 	float:left;
 	width:auto;
 	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	margin-left:5vw;
+	margin-right:5vw;
 	margin-top:0vh;
-	-webkit-text-stroke: .2vh white;	
+	background-color:white;
+	border-radius:.4vw;
+}
+#N_Home p, #N_PC p, #N_Team p, #N_Contact p{
+	margin:0 1vw 0 1vw;
 }
 
 #Container{
@@ -146,10 +149,9 @@ img {
 }
 
 #N_Home, #N_PC, #N_Team, #N_Contact{
-	font-size:2.2vh;
-	margin-left:3.9vw;
-	margin-top:0vh;
-	-webkit-text-stroke: .15vh white;
+	font-size:2.6vw;
+	margin-right:3.8vw;
+	margin-top:.2vw;
 		
 }
 
@@ -159,6 +161,12 @@ img {
 		height:14vh;
 		
 	}
+	#N_Home, #N_PC, #N_Team, #N_Contact{
+		font-size:4.5vw;
+		margin-right:4vw;
+		
+	}
+
 
 }
 
@@ -168,5 +176,6 @@ img {
 		background-color:transparent;
 	
 	}
+	
 
 }
