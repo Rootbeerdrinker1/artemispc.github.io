@@ -61,11 +61,7 @@ body {
 	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	margin-left:5vw;
 	margin-top:0vh;
-	text-shadow: -.2vh .2vh 0 rgba(255, 255, 255, 1),
-				  .2vh .2vh 0 rgba(255, 255, 255, 1),
-				 .2vh -.2vh 0 rgba(255, 255, 255, 1),
-				-.2vh -.2vh 0 rgba(255, 255, 255, 1);
-	
+	-webkit-text-stroke: 1px white;	
 }
 
 #Container{
@@ -136,7 +132,7 @@ img {
 	height:14.9vh;
 	width:5vh;
 	background-color:white;
-	margin-top:70vh;
+	margin-top:68vh;
 	margin-left:87vw;
 	
 }
