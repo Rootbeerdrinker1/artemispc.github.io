@@ -1,5 +1,5 @@
 ﻿body {
-  	background-color: powderblue;
+  	background-color:gray;
   	margin:0px;
   	overflow-x:hidden;
   	overflow-y: hidden;
@@ -10,7 +10,8 @@
 	height:7.5vh;
 	width:100%;
 	padding:0px;
-	backdrop-filter: blur(200px);
+	backdrop-filter: blur(50px);
+	-webkit-backdrop-filter: blur(50px);
 	/*-webkit-filter: blur(5px);
  	-moz-filter: blur(5px);
  	-ms-filter: blur(5px);
@@ -61,10 +62,13 @@
 				-.1vh -.1vh 0 #FFFFFF;
 	
 }
+#mobilespace{
+	display:none;
+}
 
 
 #Container{
-	scroll-snap-points-y: repeat(500px);
+	scroll-snap-points-y: repeat(100vh);
     scroll-snap-destination: 0 0;
     scroll-snap-type: y mandatory;
     scroll-snap-type: mandatory;
@@ -88,21 +92,22 @@
 .section img{
 	width: 100%;
   	height:100%;
-  	object-fit:cover; }
+  	object-fit:cover; 
+}
 
 #SocialSites{
 	position:fixed;
 	float:right;
-	height:3.7vh;
-	width:11.1vh;
+	height:5vh;
+	width:14.9vh;
 	background-color:white;
-	margin-top:95vh;
-	margin-left:91vw;
+	margin-top:93vh;
+	margin-left:90vw;
 }
 #Instagram, #Twitter, #Youtube{
-	width:3.5vh;
-	height:3.5vh;
-	margin:.1vh;
+	width:4.5vh;
+	height:4.5vh;
+	margin:.22vh;
 	background-color:yellow;
 	float:left;
 }
@@ -120,6 +125,70 @@ img {
 }
 .rotate180{
 	transform: rotate(180deg);
+}
+
+
+@media only screen and (max-width: 600px) {
+#mobilespace{
+	height:100%;
+	width=100%;
+	display:block;
+	
+}
+#mobilespace img{
+	height:100%;
+	width=100%;
+	display:block;
+	
+}
+
+#SocialSites{
+	position:fixed;
+	float:right;
+	height:14.9vh;
+	width:5vh;
+	background-color:white;
+	margin-top:84vh;
+	margin-left:87vw;
+	
+}
+#Instagram, #Twitter, #Youtube{
+	width:4.5vh;
+	height:4.5vh;
+	margin:.22vh;
+	background-color:yellow;
+	float:left;
+}
+#TopHeader{
+	height:14vh;
+}
+#N_Home, #N_PC, #N_Team, #N_Contact{
+	font-size:2.4vh;
+	margin-left:3.9vw;
+	margin-top:0vh;
+		
+}
+#Container{
+	scroll-snap-points-y: repeat(84vh);
+
+}
+.section {
+    scroll-snap-align: end;
+    display: flex;
+    min-width:100vw;
+	height:86vh;
+	justify-content: center;
+	
+	
+}
+
+.section img{
+	width: 100%;
+  	height:100%;
+  	object-fit:cover; 
+}
+
+
 }
 
 
