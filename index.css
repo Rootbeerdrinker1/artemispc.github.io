@@ -89,6 +89,10 @@ body {
     min-width:100vw;
 	height:100vh;
 	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -2;
+	
 	
 	
 }
@@ -96,6 +100,8 @@ body {
 	width: 100%;
   	height:100%;
   	object-fit:cover; 
+
+  	
 }
 
 #SocialSites{
@@ -115,6 +121,16 @@ body {
 	float:left;
 }
 
+#Text1{
+	text-align:center;
+	font-size:9vh;
+	font-weight: 250;
+	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+
+	
+}
+
 
 
 img {
@@ -129,6 +145,21 @@ img {
 .rotate180{
 	transform: rotate(180deg);
 }
+.gentext{
+	position:absolute;
+	background-color:rgba(20, 20, 20, 0.6);
+	border: 4px solid;
+	border-color:white;
+	
+	
+}  	
+.gentext p{
+	margin:1vw 2vw 1vw 2vw;
+	color:white;
+	font-size:
+	
+}
+
 
 
 @media only screen and (max-aspect-ratio: 15/10) {
