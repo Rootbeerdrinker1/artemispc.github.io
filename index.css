@@ -19,6 +19,12 @@ body {
 	--MediumText: 4vw;
 	--SmallText: 2vw;
 }
+
+@font-face {
+  font-family: 'ImpactWeb';
+  src: url('impact.ttf'); /* IE9 Compat Modes */
+  src: url('impact.ttf')  format('truetype')}
+
 /* Header */
 
 #TopHeader{
@@ -85,10 +91,10 @@ body {
 	margin-right:5vw;
 	top: 50%; /* Position text in the middle */
   	left: 50%; /* Position text in the middle */
-	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	background-color:white;
 	color: black;
-	letter-spacing: .2vw;
+	letter-spacing: .15vw;
 	border-radius:.7vw;
 	/*
 	mix-blend-mode: screen; 
@@ -171,7 +177,7 @@ body {
 	text-align:center;
 	font-size:var(--LargeText);
 	font-weight: 250;
-	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	margin: 0 5vw 0 5vw;
 }
 
