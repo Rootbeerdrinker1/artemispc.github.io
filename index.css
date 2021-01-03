@@ -1,18 +1,30 @@
 ﻿html{
-    overflow-y: scroll;
+	overflow-y:hidden;
+
 }
 body {
   	background-color:gray;
   	margin:0px;
-  	overflow-x: hidden;
-  	overflow-y: hidden;
-    height:100vh;
+  	height:100vh;   
+    width: 100vw;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
     
+
 }
 
+:root{
+	--LargeText: 6vw;
+	--MediumText: 4vw;
+	--SmallText: 2vw;
+}
+/* Header */
+
 #TopHeader{
+	top: 0;
 	height:7.5vh;
-	width:100%;
+	width: 100%;
 	padding:0px;
 	backdrop-filter: blur(40vw);
 	-webkit-backdrop-filter: blur(40vw);
@@ -22,8 +34,10 @@ body {
  	-o-filter: blur(5px);
  	filter: blur(5px);
  	*/
- 	position:fixed;
+ 	position:absolute;
  	background-color:rgba(20, 20, 20, 0.7);
+
+ 	
  	
 }
 
@@ -35,6 +49,7 @@ body {
 	margin-left: 2vh;
 	margin-right: 2vh;
 	margin-top:.6vh;
+	user-select: none;
 	
 }
 #Title{
@@ -42,6 +57,7 @@ body {
 	float:left;
 	height:5vh;
 	margin-top:1.3vh;
+	user-select: none;
 	
 		
 }
@@ -53,56 +69,44 @@ body {
   	align-items: center;
   	align-self:center;
 	float:right;
+
+
 	
 }
 
+
 #N_Home, #N_PC, #N_Team, #N_Contact{
+	display: flex;
 	font-size:2.7vh;
 	font-weight: 450;
 	float:left;
 	width:auto;
-	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	padding: 0 1vw 0 1vw ;
 	margin-right:5vw;
+	top: 50%; /* Position text in the middle */
+  	left: 50%; /* Position text in the middle */
+	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	background-color:white;
-	border-radius:1vw;
-	
-}
-#N_Home p, #N_PC p, #N_Team p, #N_Contact p{
-	margin:0 1vw 0 1vw;
-}
-
-#Container{
-	scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    scroll-snap-type: mandatory;
-    height:100vh;
-    overflow-y: scroll;
-    overflow-x:hidden;
-    max-width: 100vw;
-    width: 500vw;
+	color: black;
+	letter-spacing: .2vw;
+	border-radius:.7vw;
+	/*
+	mix-blend-mode: screen; 
+	*/
+	user-select: none;
 
 }
 
-.section {
-    scroll-snap-align: start;
-    display: flex;
-    min-width:100vw;
-	height:100vh;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: -2;
-	
-	
-	
+#N_Home:hover, #N_PC:hover, #N_Team:hover, #N_Contact:hover{
+	background-color:black;
+	color: white;
+	cursor: pointer;
 }
-.section img{
-	width: 100%;
-  	height:100%;
-  	object-fit:cover; 
 
-  	
-}
+
+
+
+/* Social Bar */
 
 #SocialSites{
 	position:fixed;
@@ -119,16 +123,56 @@ body {
 	margin:.22vh;
 	background-color:yellow;
 	float:left;
+	user-select: none;
+	cursor: pointer;
+}
+
+
+/* ---------- Content ---------- */
+
+#Container{
+	height:100vh;
+	width:100vw;
+  	scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+
+    
+
+}
+
+.section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    min-width:100vw;
+	height:100vh;
+	justify-content: center;
+	align-items: center;
+	z-index: -3;
+	position:relative;
+	
+	
+	
+}
+.section img{
+	width: 100%;
+  	height:100%;
+  	object-fit:cover; 
+  	position:absolute;
+
 }
 
 #Text1{
 	text-align:center;
-	font-size:9vh;
+	font-size:var(--LargeText);
 	font-weight: 250;
 	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-
-
-	
+	margin: 0 5vw 0 5vw;
 }
 
 
@@ -150,16 +194,17 @@ img {
 	background-color:rgba(20, 20, 20, 0.6);
 	border: 4px solid;
 	border-color:white;
-	
+	z-index:1;
+	pointer-events: auto; 	
 	
 }  	
 .gentext p{
 	margin:1vw 2vw 1vw 2vw;
 	color:white;
-	font-size:
+	pointer-events: auto; 
+	z-index:1;
 	
 }
-
 
 
 @media only screen and (max-aspect-ratio: 15/10) {
@@ -184,13 +229,12 @@ img {
 
 #N_Home, #N_PC, #N_Team, #N_Contact{
 	font-size:2.6vw;
-	margin-right:3.8vw;
-	margin-top:.2vw;
+	
 		
 }
 
 }
-@media only screen and (max-aspect-ratio: 17/20) {
+@media only screen and (max-aspect-ratio: 20/20) {
 	#TopHeader{
 		height:14vh;
 		
@@ -200,7 +244,9 @@ img {
 		margin-right:4vw;
 		
 	}
-
+	:root{
+	--LargeText:10vw;
+	}
 
 }
 
@@ -208,7 +254,6 @@ img {
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
 	#TopHeader{ 
 		background-color:transparent;
-	
 	}
 	
 
