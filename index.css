@@ -22,8 +22,9 @@ body {
 
 @font-face {
   font-family: 'ImpactWeb';
-  src: url('impact.ttf'); /* IE9 Compat Modes */
-  src: url('impact.ttf')  format('truetype')}
+  src: url('fonts/impact.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/impact.ttf')  format('truetype'),
+  	url('fonts/impact.woff')  format('woff')}
 
 /* Header */
 
