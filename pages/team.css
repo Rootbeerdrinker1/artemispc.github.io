@@ -235,7 +235,7 @@ body {
 }
 
 .fixed{
-	background-attachment: fixed;
+
 }
 
 /* ----- General Classes ----- */
@@ -331,6 +331,15 @@ animation: fadeIn ease 1s;
 	}
 
 	
+
+}
+
+/* ----- If not Safari ----- */
+
+@supports (background-attachment: fixed) {
+	.fixed{
+		background-attachment: fixed;
+	}
 
 }
 /* ----- Animations ----- */
