@@ -101,7 +101,6 @@ body {
 	mix-blend-mode: screen; 
 	*/
 	user-select: none;
-	text-decoration: none;
 
 }
 
@@ -156,30 +155,23 @@ body {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     display: flex;
-    width:100vw;
+    min-width:100vw;
 	height:100vh;
 	justify-content: center;
 	align-items: center;
-	background-size: cover;	
-	background-position: center;
+	z-index: -3;
+	position:relative;
 	
 	
+	
 }
+.section img{
+	width: 100%;
+  	height:100%;
+  	object-fit:cover; 
+  	position:absolute;
 
-#Image1{
-	background-image:url('images/testpc7.jpg');
 }
-#Image2{
-	background-image:url('images/testpc.jpg');
-}
-#Image3{
-	background-image:url('images/testpc10.jpg');
-}
-#Image4{
-	background-image:url('images/testimage.jpg');
-}
-
-
 
 #Text1{
 	text-align:center;
@@ -190,7 +182,6 @@ body {
 }
 
 
-/* ----- General Classes ----- */
 
 img {
     max-width: 100%;
@@ -212,14 +203,19 @@ animation: fadeIn ease 1s;
 -ms-animation: fadeIn ease 1s;
 }
 .gentext{
+	position:absolute;
 	background-color:rgba(20, 20, 20, 0.6);
 	border: .4vw solid;
 	border-color:white;
+	z-index:1;
+	pointer-events: auto; 	
+	
 }  	
 .gentext p{
 	margin:1vw 2vw 1vw 2vw;
 	color:white;
 	pointer-events: auto; 
+	z-index:1;
 	
 }
 

@@ -1,5 +1,6 @@
 ﻿html{
 	overflow-y:hidden;
+	overflow-x:hidden;
 
 }
 body {
@@ -18,13 +19,14 @@ body {
 	--LargeText: 6vw;
 	--MediumText: 4vw;
 	--SmallText: 2vw;
+	--TinyText: 1vw;
 }
 
 @font-face {
   font-family: 'ImpactWeb';
-  src: url('fonts/impact.ttf'); /* IE9 Compat Modes */
-  src: url('fonts/impact.ttf')  format('truetype'),
-  	url('fonts/impact.woff')  format('woff')}
+  src: url('../fonts/impact.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/impact.ttf')  format('truetype'),
+  	url('../fonts/impact.woff')  format('woff')}
 
 /* Header */
 
@@ -146,7 +148,7 @@ body {
     scroll-behavior: smooth;
     overflow-y: auto;
     overflow-x: hidden;
-	scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none;  /* Firefox */
 
     
 
@@ -157,29 +159,33 @@ body {
     scroll-snap-stop: always;
     display: flex;
     width:100vw;
-	height:100vh;
+	height:85vh;
 	justify-content: center;
 	align-items: center;
 	background-size: cover;	
 	background-position: center;
+		
+}
+
+
+#TopSection{
+	/*background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
 	
+	background: linear-gradient(141deg, rgba(0,0,0,1) 0%, rgba(128,104,104,1) 44%, rgba(255,0,0,1) 100%); */
+	height:100vh;
+	background:linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 12%) 0%,
+    hsl(0, 0%, 12%) 25%,
+    hsl(0, 66.28%, 29.06%) 25%,
+    hsl(0, 66.28%, 29.06%) 50%,
+    hsl(0, 81.33%, 37.1%) 50%,
+    hsl(0, 81.33%, 37.1%) 75%,
+    hsl(0, 100%, 40.98%) 75%,
+    hsl(0, 100%, 40.98%) 100%
+  );
 	
 }
-
-#Image1{
-	background-image:url('images/testpc7.jpg');
-}
-#Image2{
-	background-image:url('images/testpc.jpg');
-}
-#Image3{
-	background-image:url('images/testpc10.jpg');
-}
-#Image4{
-	background-image:url('images/testimage.jpg');
-}
-
-
 
 #Text1{
 	text-align:center;
@@ -189,8 +195,51 @@ body {
 	margin: 0 5vw 0 5vw;
 }
 
+#Image2{
+	background-image:url('../images/temp/ellis.jpg');
+	
+}
+#Image3{
+	background-image:url('../images/temp/rick.jpg');
+}
+#Image4{
+	background-image:url('../images/temp/bear.jpg');
+}
+
+.sectioninfo{
+	width:100vw;
+	height:15vh;
+	background-color:white;
+	font-weight: 250;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.mediumtext{
+	margin: 0 5vw 0 5vw;
+	font-size:var(--MediumText);
+}
+
+.smalltext{
+	margin: 0 5vw 0 5vw;
+	font-size:var(--SmallText);
+	color:gray;
+}
+.tinytext{
+	margin: 0;
+	font-size:var(--TinyText);
+}
+
+.fixed{
+	background-attachment: fixed;
+}
 
 /* ----- General Classes ----- */
+
 
 img {
     max-width: 100%;
@@ -263,12 +312,15 @@ animation: fadeIn ease 1s;
 		
 	}
 	:root{
-	--LargeText:10vw;
+	--LargeText: 10vw;
+	--MediumText: 8vw;
+	--SmallText: 6vw;
+	--TinyText: 5vw;
 	}
 
 }
 
-/* ----- Firefox \ Blur check ----- */
+/* ----- If not Firefox \ Blur check ----- */
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
 	#TopHeader{ 
