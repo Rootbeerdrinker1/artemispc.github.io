@@ -196,14 +196,14 @@ body {
 }
 
 #Image2{
-	background-image:url('../images/temp/ellis.jpg');
+	background:url('../images/temp/ellis.jpg') 0 0 / cover;
 	
 }
 #Image3{
 	background-image:url('../images/temp/rick.jpg');
 }
 #Image4{
-	background-image:url('../images/temp/bear.jpg');
+	background:url('../images/temp/bear.jpg');
 }
 
 .sectioninfo{
