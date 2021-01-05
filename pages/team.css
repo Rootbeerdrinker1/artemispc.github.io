@@ -164,6 +164,7 @@ body {
 	align-items: center;
 	background-size: cover;	
 	background-position: center;
+	background-repeat:no-repeat;
 		
 }
 
@@ -200,10 +201,10 @@ body {
 	
 }
 #Image3{
-	background-image:url('../images/temp/rick.jpg');
+	background:url('../images/temp/rick.jpg') 0 0 / cover;
 }
 #Image4{
-	background:url('../images/temp/bear.jpg');
+	background:url('../images/temp/bear.jpg') 0 0 / cover;
 }
 
 .sectioninfo{
