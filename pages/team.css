@@ -199,13 +199,13 @@ body {
 }
 
 #Image2{
-	background:url('../images/temp/ellis.jpg') center / cover fixed;
+	background:url('../images/temp/ellis.jpg') center / cover;
 }
 #Image3{
-	background:url('../images/temp/rick.jpg') center / cover fixed;
+	background:url('../images/temp/rick.jpg') center / cover;
 }
 #Image4{
-	background:url('../images/temp/bear.jpg') center / cover fixed;
+	background:url('../images/temp/bear.jpg') center / cover;
 }
 
 .sectioninfo{
@@ -294,6 +294,7 @@ animation: fadeIn ease 1s;
 	margin:.22vh;
 	background-color:yellow;
 	float:left;
+
 }
 
 #N_Home, #N_PC, #N_Team, #N_Contact{
@@ -334,6 +335,14 @@ animation: fadeIn ease 1s;
 
 	
 
+}
+
+/* ----- If not IOS ----- */
+
+@supports not (-webkit-touch-callout: none) {
+	#Image2, #Image3, #Image4{
+		background-attachment: fixed;
+	}
 }
 
 /* ----- Animations ----- */
