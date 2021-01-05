@@ -214,13 +214,26 @@ body {
 	background-color:white;
 	font-weight: 250;
 	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	text-align:center;
-	display: flex;
 	justify-content: center;
-	align-items: center;
+
+
 
 
 }
+
+.sectiontext{
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	display: flex;
+	margin-top: 2.5vh;
+	height:auto;
+	width:100vw;
+	float:left;
+
+}
+
+
 .mediumtext{
 	margin: 0 5vw 0 5vw;
 	font-size:var(--MediumText);
@@ -314,12 +327,22 @@ animation: fadeIn ease 1s;
 		margin-right:4vw;
 		
 	}
-	:root{
-	--LargeText: 10vw;
-	--MediumText: 8vw;
-	--SmallText: 6vw;
-	--TinyText: 5vw;
+	#SocialSites{
+		margin-top:58vh;
 	}
+	:root{
+		--LargeText: 10vw;
+		--MediumText: 8vw;
+		--SmallText: 6vw;
+		--TinyText: 5vw;
+	}
+	.section{
+		height:77vh;
+	}
+	.sectioninfo{
+		height:23vh;
+	}
+
 
 }
 
