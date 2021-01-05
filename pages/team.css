@@ -146,9 +146,10 @@ body {
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;  /* Firefox */
+    -webkit-overflow-scrolling: touch;
 
     
 
@@ -164,7 +165,8 @@ body {
 	align-items: center;
 	background-size: cover;	
 	background-position: center;
-	background-repeat:no-repeat;
+
+	
 		
 }
 
@@ -197,14 +199,13 @@ body {
 }
 
 #Image2{
-	background:url('../images/temp/ellis.jpg') 0 0 / cover;
-	
+	background:url('../images/temp/ellis.jpg') center / cover fixed;
 }
 #Image3{
-	background:url('../images/temp/rick.jpg') 0 0 / cover;
+	background:url('../images/temp/rick.jpg') center / cover fixed;
 }
 #Image4{
-	background:url('../images/temp/bear.jpg') 0 0 / cover;
+	background:url('../images/temp/bear.jpg') center / cover fixed;
 }
 
 .sectioninfo{
@@ -335,14 +336,6 @@ animation: fadeIn ease 1s;
 
 }
 
-/* ----- If not Safari ----- */
-
-@supports (background-attachment: fixed) {
-	.fixed{
-		background-attachment: fixed;
-	}
-
-}
 /* ----- Animations ----- */
 
 @keyframes fadeIn {
