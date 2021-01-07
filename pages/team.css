@@ -368,14 +368,18 @@ animation: fadeIn ease 1s;
 	#Image2, #Image3, #Image4{
 		background-attachment: fixed;
 	}
+
+}
+
+@supports (-webkit-touch-callout: none) {
 	.section{
 		height:72vh;
 	}
 	.sectioninfo{
 		height:28vh;
 	}
-
 }
+
 
 /* ----- Animations ----- */
 
