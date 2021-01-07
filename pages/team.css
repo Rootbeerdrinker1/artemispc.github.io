@@ -289,40 +289,6 @@ animation: fadeIn ease 1s;
 	
 }
 
-/* ----- If not Firefox \ Blur check ----- */
-
-@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-	#TopHeader{ 
-		background-color:transparent;
-	}
-	#Container{
-		scrollbar-width: auto;
-	}
-
-	
-
-}
-
-/* ----- If not IOS ----- */
-
-@supports not (-webkit-touch-callout: none) {
-	#Image2, #Image3, #Image4{
-		background-attachment: fixed;
-	}
-
-}
-
-/* ----- If IOS ----- */
-
-@supports (-webkit-touch-callout: none) {
-	.section{
-		height:72vh;
-	}
-	.sectioninfo{
-		height:28vh;
-	}
-}
-
 /* ----- Screen size check ----- */
 
 @media only screen and (max-aspect-ratio: 15/10) {
@@ -351,6 +317,18 @@ animation: fadeIn ease 1s;
 	
 		
 }
+
+/* ----- If IOS ----- */
+
+@supports (-webkit-touch-callout: none) {
+	.section{
+		height:72vh;
+	}
+	.sectioninfo{
+		height:28vh;
+	}
+}
+
 
 }
 @media only screen and (max-aspect-ratio: 20/20) {
@@ -381,6 +359,31 @@ animation: fadeIn ease 1s;
 
 
 }
+
+/* ----- If not Firefox \ Blur check ----- */
+
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+	#TopHeader{ 
+		background-color:transparent;
+	}
+	#Container{
+		scrollbar-width: auto;
+	}
+
+	
+
+}
+
+/* ----- If not IOS ----- */
+
+@supports not (-webkit-touch-callout: none) {
+	#Image2, #Image3, #Image4{
+		background-attachment: fixed;
+	}
+
+}
+
+
 
 /* ----- Animations ----- */
 
