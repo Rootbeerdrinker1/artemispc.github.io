@@ -318,18 +318,6 @@ animation: fadeIn ease 1s;
 		
 }
 
-/* ----- If IOS ----- */
-
-@supports (-webkit-touch-callout: none) {
-	.section{
-		height:72vh;
-	}
-	.sectioninfo{
-		height:28vh;
-	}
-}
-
-
 }
 @media only screen and (max-aspect-ratio: 20/20) {
 	#TopHeader{
@@ -356,6 +344,17 @@ animation: fadeIn ease 1s;
 	.sectioninfo{
 		height:23vh;
 	}
+	/* ----- If IOS ----- */
+
+	@supports (-webkit-touch-callout: none) {
+		.section{
+			height:72vh;
+		}
+		.sectioninfo{
+			height:28vh;
+		}
+	}
+
 
 
 }
