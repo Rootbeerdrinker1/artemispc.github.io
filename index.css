@@ -43,6 +43,7 @@ body {
  	*/
  	position:fixed;
  	background-color:rgba(20, 20, 20, 0.7);
+ 	z-index: 1;
 
  	
  	
@@ -124,6 +125,7 @@ body {
 	background-color:white;
 	margin-top:93vh;
 	margin-left:90vw;
+	z-index: 1;
 }
 #Instagram, #Twitter, #Youtube{
 	width:4.5vh;

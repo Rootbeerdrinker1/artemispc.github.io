@@ -45,6 +45,7 @@ body {
  	*/
  	position:fixed;
  	background-color:rgba(20, 20, 20, 0.7);
+ 	z-index: 1;
 
  	
  	
@@ -126,6 +127,7 @@ body {
 	background-color:white;
 	margin-top:93vh;
 	margin-left:90vw;
+	z-index: 1;
 }
 #Instagram, #Twitter, #Youtube{
 	width:4.5vh;
@@ -366,6 +368,13 @@ animation: fadeIn ease 1s;
 	#Image2, #Image3, #Image4{
 		background-attachment: fixed;
 	}
+	.section{
+		height:72vh;
+	}
+	.sectioninfo{
+		height:28vh;
+	}
+
 }
 
 /* ----- Animations ----- */
