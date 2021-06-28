@@ -98,6 +98,7 @@ body {
 	color: black;
 	letter-spacing: .15vw;
 	border-radius:.7vw;
+	border: .15vw solid transparent;
 	/*
 	mix-blend-mode: screen; 
 	*/
@@ -108,6 +109,7 @@ body {
 
 #N_Home:hover, #N_PC:hover, #N_Team:hover, #N_Contact:hover{
 	background-color:black;
+	border: .15vw solid white;
 	color: white;
 	cursor: pointer;
 }
@@ -170,16 +172,16 @@ body {
 }
 
 #Image1{
-	background-image:url('images/testpc7.jpg');
+	background-image:url('images/computers/paul_pc_z1.jpg');
 }
 #Image2{
-	background-image:url('images/testpc.jpg');
+	background-image:url('images/computers/paul_pc.jpg');
 }
 #Image3{
-	background-image:url('images/testpc10.jpg');
+	background-image:url('images/computers/paul_pc_z2.jpg');
 }
 #Image4{
-	background-image:url('images/testimage.jpg');
+	background-image:url('images/temp/MDog.jpg');
 }
 
 

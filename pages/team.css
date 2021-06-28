@@ -167,6 +167,8 @@ body {
 	align-items: center;
 	background-size: cover;	
 	background-position: center;
+	overflow: hidden;
+	
 
 	
 		
@@ -201,7 +203,7 @@ body {
 }
 
 #Image2{
-	background:url('../images/temp/ellis.jpg') center / cover;
+	background:url('../images/social/paul_w_pc.jpg') left / cover;
 }
 #Image3{
 	background:url('../images/temp/rick.jpg') center / cover;
