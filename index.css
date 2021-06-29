@@ -167,18 +167,19 @@ body {
 	align-items: center;
 	background-size: cover;	
 	background-position: center;
+	overflow: hidden;
 	
 	
 }
 
 #Image1{
-	background-image:url('images/computers/paul_pc_z1.jpg');
+	background-image:url('images/computers/paul_pc_z1.webp');
 }
 #Image2{
-	background-image:url('images/computers/paul_pc.jpg');
+	background-image:url('images/computers/paul_pc.webp');
 }
 #Image3{
-	background-image:url('images/computers/paul_pc_z2.jpg');
+	background-image:url('images/computers/paul_pc_z2.webp');
 }
 #Image4{
 	background-image:url('images/temp/MDog.jpg');
