@@ -342,7 +342,7 @@ animation: fadeIn ease 1s;
 #SocialSites{
 	position:fixed;
 	float:right;
-	height:14.8vh;
+	height:auto;
 	width:5vh;
 	background-color:white;
 	margin-top:68vh;
@@ -363,6 +363,13 @@ animation: fadeIn ease 1s;
 	
 		
 }
+
+
+:root{
+	--SmallText: 5vw;
+
+}
+
 
 }
 @media only screen and (max-aspect-ratio: 20/20) {
