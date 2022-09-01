@@ -123,10 +123,11 @@ body {
 	position:fixed;
 	float:right;
 	height:5vh;
-	width:14.9vh;
+	width:auto;
 	background-color:white;
 	margin-top:93vh;
-	margin-left:90vw;
+	margin-left:95vw;
+	/*was 90 with 2 other buttons */
 	z-index: 1;
 }
 #Instagram, #Twitter, #Youtube{
@@ -174,6 +175,7 @@ body {
 
 #Image1{
 	background-image:url('images/computers/paul_pc_z1.webp');
+	flex-direction: column;
 }
 #Image2{
 	background-image:url('images/computers/paul_pc.webp');
@@ -185,15 +187,85 @@ body {
 	background-image:url('images/temp/MDog.jpg');
 }
 
+#Footer{
+	display:block;
+	height:16vh;
+	background-color:#07060C;
+	scroll-snap-align: end;
+	width:100vw;
+	justify-content: center;
+	align-items: center;
+	float:none;
+	text-align:center;
+	
+
+
+}
+
+#FooterIcon{
+	
+	height:4vw;
+	width:auto;
+
+}
+#FooterIcon img{
+	display: block;
+	margin:auto;
+}
+
+#FooterLine hr{
+	background-color:white;
+	width:70%;
+	
+}
+#Copyright a{
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color:white;
+	font-size:2vh;
+	font-weight: 450;
+	letter-spacing: .15vw;
+	
+}
+
 
 
 #Text1{
+	
 	text-align:center;
 	font-size:var(--LargeText);
 	font-weight: 250;
 	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	margin: 0 5vw 0 5vw;
+	margin-top:10vh;
 }
+#Text2{
+	
+	text-align:center;
+	font-size:var(--SmallText);
+	font-weight: 250;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin: 0 5vw 0 5vw;
+	margin-top:10vh;
+}
+
+#Text3{
+	text-align:center;
+	font-size:var(--SmallText);
+	font-weight: 250;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin: 0 5vw 0 5vw;
+	margin-top:50vh;
+}
+#Text4{
+	text-align:center;
+	font-size:var(--SmallText);
+	font-weight: 250;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin: 0 5vw 0 5vw;
+	margin-top:40vh;
+}
+
+
 
 
 /* ----- General Classes ----- */
