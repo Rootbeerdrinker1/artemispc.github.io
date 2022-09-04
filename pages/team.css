@@ -209,7 +209,7 @@ body {
 	background:url('../images/social/paul_w_pc.webp') left / cover;
 }
 #Image3{
-	background:url('../images/temp/rick.jpg') center / cover;
+	background:url('../images/social/simon2.jpg') center / cover;
 }
 #Image4{
 	background:url('../images/social/jacob_outside3.jpg') center / cover;
@@ -366,6 +366,11 @@ animation: fadeIn ease 1s;
 		
 }
 
+#Image4{
+	background:url('../images/social/jacob_outside3_m.jpg') center / cover;
+	
+	
+}
 
 :root{
 	--SmallText: 5vw;
