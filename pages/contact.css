@@ -224,7 +224,7 @@ body {
 	margin: 10vh 5vw 0vh 5vw;
 }
 #Form1{
-	margin: 10vh 5vw 10vh 5vw;
+	margin: 10vh 5vw 0vh 5vw;
 }
 
 #Form1 iframe{
@@ -232,6 +232,13 @@ body {
 	height: 105vh;
 }
 
+#Text3{
+	text-align:center;
+	font-size:var(--TinyText);
+	font-weight: 250;
+	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin: 10vh 5vw 10vh 5vw;
+}
 
 
 #Image2{
@@ -261,7 +268,7 @@ body {
 }
 
 #FooterIcon{
-	
+	margin-top: 1vh;
 	height:4vw;
 	width:auto;
 
@@ -411,6 +418,12 @@ animation: fadeIn ease 1s;
 	height: 105vh;
 }
 
+#FooterIcon{
+	
+	height:6vw;
+	width:auto;
+
+}
 
 
 }

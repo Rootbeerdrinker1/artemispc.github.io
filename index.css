@@ -203,7 +203,7 @@ body {
 }
 
 #FooterIcon{
-	
+	margin-top: 1vh;
 	height:4vw;
 	width:auto;
 
@@ -333,6 +333,14 @@ animation: fadeIn ease 1s;
 	--SmallText: 5vw;
 
 }
+
+#FooterIcon{
+	
+	height:6vw;
+	width:auto;
+
+}
+
 
 
 }
