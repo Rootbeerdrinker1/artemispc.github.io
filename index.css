@@ -338,7 +338,7 @@ iframe {
     margin-right: auto;
     display: flex;
     margin-bottom:10vh;
-	max-width: 100%;
+	max-width: 100vw;
 }
 
 
