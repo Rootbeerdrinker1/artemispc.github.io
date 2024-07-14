@@ -3,7 +3,7 @@
 
 }
 body {
-	background-color: #661e1e;
+  	background-color:gray;
   	margin:0px;
   	height:100vh;   
     width: 100vw;
@@ -32,17 +32,20 @@ body {
 	top: 0;
 	height:7.5vh;
 	width: 100%;
+	padding:0px;
 	/*backdrop-filter: blur(40vw);
 	-webkit-backdrop-filter: blur(40vw);
-	-webkit-filter: blur(5px);
+	/*-webkit-filter: blur(5px);
  	-moz-filter: blur(5px);
  	-ms-filter: blur(5px);
  	-o-filter: blur(5px);
  	filter: blur(5px);
- 	
- 	position:fixed;*/
- 	background-color:rgba(124, 66, 66, 0.7);
-	 display: flex;
+ 	*/
+ 	position:fixed;
+ 	background-color:rgba(20, 20, 20, 0.7);
+	background: linear-gradient(#0c0c0c, #0c0c0c, #0c0c0c, #0c0c0c, #0c0c0c, #0c0c0c00), rgba(0,0,0,0.2);
+ 	z-index: 1;
+
  	
  	
 }
@@ -62,24 +65,19 @@ body {
 	width:auto;
 	float:left;
 	height:5vh;
-	margin-top:.8vh;
+	margin-top:1.3vh;
 	user-select: none;
 	
 		
-}
-#TitleLogo{
-  	align-self: center;
 }
 
 #Navigation{
 	height:7vh;
 	display: flex;
+	justify-content: center;
   	align-items: center;
   	align-self:center;
-	float:left;
-	margin-left: 1vw;
-	margin-right: auto;
-	width:50vh;
+	float:right;
 
 
 	
@@ -88,34 +86,32 @@ body {
 
 #N_Home, #N_PC, #N_Team, #N_Contact{
 	display: flex;
-	font-size:2.2vh;
+	font-size:2.7vh;
 	font-weight: 450;
 	float:left;
 	width:auto;
 	padding: 0 1vw 0 1vw ;
-	margin-right:1vw;
+	margin-right:5vw;
 	top: 50%; /* Position text in the middle */
   	left: 50%; /* Position text in the middle */
 	font-family:ImpactWeb, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	background-color:white;
 	color: black;
 	letter-spacing: .15vw;
-	border-radius:.3vw;
+	border-radius:.7vw;
 	border: .15vw solid transparent;
 	/*
 	mix-blend-mode: screen; 
 	*/
 	user-select: none;
 	text-decoration: none;
-  	text-shadow:
-    .15vh .15vh 0 #ffffff,
-    -.15vh .15vh 0 #ffffff,
-    -.15vh -.15vh 0 #ffffff,
-    .15vh -.15vh 0 #ffffff;
 
 }
 
 #N_Home:hover, #N_PC:hover, #N_Team:hover, #N_Contact:hover{
-	border: .15vw solid rgb(255, 255, 255);
+	background-color:black;
+	border: .15vw solid white;
+	color: white;
 	cursor: pointer;
 }
 
@@ -125,26 +121,23 @@ body {
 /* Social Bar */
 
 #SocialSites{
-	display: flex;
-	height:100%;
+	position:fixed;
 	float:right;
-	margin-right: 1vw;
-	margin-left: auto;
-	width:50vh;
-	justify-content:right;
-
+	height:5vh;
+	width:auto;
+	background-color:white;
+	margin-top:93vh;
+	margin-left:95vw;
+	/*was 90 with 2 other buttons */
+	z-index: 1;
 }
 #Instagram, #Twitter, #Youtube{
 	width:4.5vh;
-	margin-left:1vw;
+	height:4.5vh;
+	margin:.22vh;
+	float:left;
 	user-select: none;
-	height: auto;
-	align-self: center;
-	
-	
-
-	
-
+	cursor: pointer;
 }
 
 
@@ -161,15 +154,11 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 	scrollbar-width: none;  /* Firefox */
+	
 	-webkit-overflow-scrolling: touch;
 
     
 
-}
-#divider1{
-	width: 100%;
-	height:7.5vh;
-	background-color: #661e1e;
 }
 
 .section {
@@ -178,31 +167,24 @@ body {
 	*/
     display: flex;
     width:100vw;
-	height:85vh;
+	height:100vh;
 	justify-content: center;
 	align-items: center;
-	background-size: cover;	
+	background-size:cover;	
 	background-position: center;
 	overflow: hidden;
 	
 	
 }
-.trapezoid{
-	border-bottom: 100px solid red;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    height: 0;
-    width: 100px;
-}
 
-#Image2{
-	background-image:url('images/computers/paul_pc_z1.webp');
+#Image1{
+	background-image:url('images/computers/laimlr.jpg');
 	flex-direction: column;
 }
-#Image3{
+#Image2{
 	background-image:url('images/computers/paul_pc.webp');
 }
-#Image1{
+#Image3{
 	background-image:url('images/computers/paul_pc_z2.webp');
 }
 #Image4{
@@ -213,7 +195,7 @@ body {
 	display:block;
 	height:16vh;
 	background-color:#07060C;
-	/*scroll-snap-align: end;*/
+	scroll-snap-align: end;
 	width:100vw;
 	justify-content: center;
 	align-items: center;
@@ -382,7 +364,7 @@ animation: fadeIn ease 1s;
 
 }
 
-/* ----- Firefox \ Blur check ----- */
+/* ----- Firefox \ Blur check -----  */
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
 	#TopHeader{ 
@@ -395,7 +377,7 @@ animation: fadeIn ease 1s;
 	
 
 }
-/* ----- Animations ----- */
+ /*----- Animations ----- */
 
 @keyframes fadeIn {
 0% {opacity:0;}
