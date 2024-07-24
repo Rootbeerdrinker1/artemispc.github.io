@@ -244,6 +244,7 @@ animation: fadeIn ease 1s;
         padding-top:1vh;
         display: flex;
         flex-direction: column;
+        padding-bottom:1vh;
     }
     
     #pcname{
@@ -276,19 +277,18 @@ animation: fadeIn ease 1s;
     }
     #specs{
         font-size:3.4vw;
-        
     }
 
     #contact{
         width: 100vw;
         float:right;
-        height: 4vw;
+        height: 3vh;
         font-size:3vw;
         font-weight: 250;
         font-family:Haettenschweiler, "Arial Narrow Bold", sans-serif;
         color:rgb(0, 0, 0);
         text-align: center;
-        margin-top: 1vh;
+        margin-bottom: 3vh;
         
     }
 
