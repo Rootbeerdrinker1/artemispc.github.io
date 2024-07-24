@@ -1,7 +1,9 @@
-var b = document.getElementById("contprebuilt");
-var w = document.getElementById("contprebuiltwhite");
+
+    
 
 function blackwhitetoggle(){
+    var b = document.getElementById("contprebuilt");
+    var w = document.getElementById("contprebuiltwhite");
     
     if (b.style.display == "flex") {
         w.style.display = "flex";
