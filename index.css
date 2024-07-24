@@ -434,7 +434,6 @@ body {
     font-size:1vw;
 }
 .pcdesc div{
-    width:14vw;
     margin:auto;
     margin-top: 1.2vh;
     align-content: center;
@@ -457,6 +456,7 @@ body {
 }
 
 .prebuiltbutt{
+    display: flex;
     background-color:darkred;
     width:10vw;
     height:4.5vh;
@@ -467,6 +467,12 @@ body {
     border-radius: .6vw;
     align-content: center;
     user-select: none;
+    text-decoration: none;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    padding-top:1vh;
 }
 .prebuiltbutt:hover{
     cursor: pointer;
@@ -705,4 +711,101 @@ iframe {
         margin-left:auto;
         margin-right:auto;
     }
+
+
+
+    /*Prebuilts */
+    #ptitlerow{
+        margin-top: 4vh;
+    }
+    #prebuilttitle1{
+        font-size:9vw;
+    }
+    #blackwhitebutt{
+        width:30vw;
+        height:4vh;
+        font-size:3.5vw;
+    }
+    #prow1{
+        height: 190vh;
+        background-color: rgb(56, 56, 56);
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .prowtitle{
+        transform-origin:center;
+        transform: rotate(0deg);
+        margin-right: 10vw;
+        margin-top:1vh;
+        font-size:10vw;
+        width:10vw;
+        
+    }
+    #prow2{
+        height: 190vh;
+        background-color: rgb(56, 56, 56);
+        margin-top:3vh;
+        margin-bottom: 3vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pcbox{
+        width:70vw;
+        height: 55vh;
+        margin-bottom: 2vh;
+    
+    }
+    .pcdesc{
+        width: 100%;
+    }
+    .pcname{
+        font-size:5.3vw;
+    }
+    .pcprice{
+        font-size:4vw;
+    }
+    .pcdesc div{
+        margin:auto;
+        margin-top: 1.2vh;
+        align-content: center;
+        text-align: center;
+        font-family:Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color:rgb(255, 255, 255);
+    }
+    
+    
+    
+    .prebuiltbutt{
+        width:40vw;
+        font-size:4.3vw;
+        margin-top: .5vh;
+        padding-top:1vh;
+    }
+
+    /*White*/
+    #contprebuiltwhite{
+        width:100vw;
+        height:auto;
+        background-color: rgb(46, 46, 46);
+        display: none;
+        flex-direction: column;
+    }
+    #contprebuiltwhite .prowtitle{
+        transform-origin:center;
+        transform: rotate(0deg);
+        width:10vw;
+        margin-right: 10vw;
+        margin-top:1vh;
+        font-size:10vw;
+        
+    }
+
 }

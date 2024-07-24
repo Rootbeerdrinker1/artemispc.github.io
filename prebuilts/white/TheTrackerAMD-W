@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>Artemis PC</title>
+<link href="../prebuilt.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+    <div id="TopHeader">
+        <div id="TopLogo">
+            <a href="../../index.html">
+                <img src="../../images/brand/logo_plain.svg" alt="Logo" width="auto" height="auto"/>
+            </a>
+        </div>
+        <div id="Title">
+            <a href="../../index.html">
+                <img src="../../images/brand/brand_name.svg" alt="" />
+            </a>
+        </div>
+
+        <div id="Navigation">
+            
+            <a id="N_Home" href="../../index.html">Home</a>
+            <!--<a id="N_Prebuilts" href="#prebuilts">Systems</a>
+            <a id="N_Contact" href="#contact" >Contact Us</a>-->
+            
+            
+        </div>
+        <a id="insta" href="https://www.instagram.com/artemis.pc/"></a>	
+
+    </div>
+    <div id="cont1">
+        <div id="pcname" class="pcblack">
+            The Arctic Tracker (AMD)
+        </div>
+
+        <div id="pcimg">
+            <img src="../../images/nopreviewwhite.png" id="pcpic">
+        </div>
+        <div id="rightdiv">
+            <div id="price">
+                $1600.00
+            </div>
+            <div id="but">
+                *Not Including Sales Tax and Shipping
+            </div>
+            <div id="specs">
+                <table id="spectable" cellpadding="10vw">
+                    <tr>
+                        <td style="width:30%" >
+                            CPU
+                        </td>
+                        <td>
+                            AMD Ryzen 5 7600X
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GPU
+                        </td>
+                        <td>
+                            GIGABYTE Eagle GeForce RTX 4060 Ti (White)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Motherboard
+                        </td>
+                        <td>
+                            GIGABYTE B650 AORUS Elite AX ICE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Memory
+                        </td>
+                        <td>
+                            32GB Corsair Vengeance DDR5 (White)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Storage
+                        </td>
+                        <td>
+                            WD_Black 1TB SN850X
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Case
+                        </td>
+                        <td>
+                            Corsair 4000D Airflow RGB (White)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cooler
+                        </td>
+                        <td>
+                            NZXT 120mm Fan Cooler (White)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Power Supply
+                        </td>
+                        <td>
+                            Corsair RM750 (White)
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div id="contact">
+            Order a pre-configured pc through the form on the home page
+        </div>
+        
+    </div>
+
+
+
+</body>
