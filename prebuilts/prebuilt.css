@@ -230,6 +230,9 @@ animation: fadeIn ease 1s;
 }
 
 @media only screen and (max-aspect-ratio: 10/10) {
+    #body{
+        background-color: rgb(218, 216, 216);
+    }
     #Navigation{
         display: none;
     }
@@ -240,11 +243,10 @@ animation: fadeIn ease 1s;
     #cont1{
         background-color: rgb(218, 216, 216);
         width:100vw;
-        height:170vh;
+        height:165vh;
         padding-top:1vh;
         display: flex;
         flex-direction: column;
-        padding-bottom:1vh;
     }
     
     #pcname{
@@ -257,7 +259,7 @@ animation: fadeIn ease 1s;
         margin-right: auto;
     }
     #rightdiv{
-        height: 80vh;
+        height:fit-content;
         width:85vw;
         margin-left: auto;
         margin-right: auto;
@@ -277,18 +279,18 @@ animation: fadeIn ease 1s;
     }
     #specs{
         font-size:3.4vw;
+        height: 100%;
     }
 
     #contact{
         width: 100vw;
-        float:right;
         height: 3vh;
         font-size:3vw;
         font-weight: 250;
         font-family:Haettenschweiler, "Arial Narrow Bold", sans-serif;
         color:rgb(0, 0, 0);
         text-align: center;
-        margin-bottom: 3vh;
+        margin-top:02vh;
         
     }
 
